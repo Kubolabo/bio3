@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="生物基礎"
+        android:id="@+id/titleText"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="36dp"
+        android:textColor="#f2b526"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="left|bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="単元選択"
+            android:id="@+id/Select"
+            android:layout_weight="0.20"
+            android:background="#faaf47"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ランダム20問"
+            android:id="@+id/All"
+            android:layout_weight="0.20"
+            android:background="#363947"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="繰り返し"
+            android:id="@+id/Again"
+            android:layout_weight="0.20"
+            android:background="#faaf47"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="お気に入り"
+            android:id="@+id/Favo"
+            android:layout_weight="0.20"
+            android:background="#363947"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom">
+        <net.nend.android.NendAdView
+            android:id="@+id/nend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            NendApiKey="7e14587163efdd8732a238fd0a942d5b9b1b54fb"
+            NendSpotId="769236"
+            NendAdjustSize="true"/>
+    </LinearLayout>
+</LinearLayout>

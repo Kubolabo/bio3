@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ryo.bio2.Nitaku_Select"
+    android:orientation="vertical">
+    //以下広告
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|bottom">
+    <net.nend.android.NendAdView
+        android:id="@+id/nend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        NendApiKey="7e14587163efdd8732a238fd0a942d5b9b1b54fb"
+        NendSpotId="769236"
+        NendAdjustSize="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="二択問題"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="#faaf47"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t1"
+            android:text="１．生物の多様性と共通性"
+            android:background="#e9d8bd"
+            android:onClick="onClick"
+            android:gravity="center_vertical|left"
+        android:singleLine="false" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:text="２．代謝とエネルギー"
+        android:background="#f2f3f5"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3"
+        android:text="３．遺伝子の本体"
+        android:background="#e9d8bd"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t4"
+        android:background="#f2f3f5"
+        android:text="４．遺伝情報の複製と分配"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t5"
+        android:background="#e9d8bd"
+        android:text="５．遺伝情報の複製とタンパク質の合成"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t6"
+        android:background="#f2f3f5"
+        android:text="６．体液とその働き"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t7"
+        android:background="#e9d8bd"
+        android:text="７．肝臓・腎臓・体液の濃度調節"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t8"
+        android:background="#f2f3f5"
+        android:text="８．生体防御と免疫"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t9"
+        android:background="#e9d8bd"
+        android:text="９．ヒトの神経系"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t10"
+        android:background="#f2f3f5"
+        android:text="10．自律神経系と内分泌系による調節"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t11"
+        android:background="#e9d8bd"
+        android:text="11．さまざまな植生"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t12"
+        android:background="#f2f3f5"
+        android:text="12．バイオームと植生の遷移"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t13"
+        android:background="#e9d8bd"
+        android:text="13．生態系の物質循環"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t14"
+        android:background="#f2f3f5"
+        android:text="14．生態系のバランスと保全"
+        android:onClick="onClick"
+        android:gravity="center_vertical|left" />
+
+
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Score"
+   >
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:layout_height="175dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="今回の得点は"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="てんすう"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:autoText="false"
+            android:textColor="#d32308"
+            android:layout_weight="0.20" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="単元選択"
+            android:id="@+id/Select"
+            android:layout_weight="0.20"
+            android:background="#faaf47"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ランダム20問"
+            android:id="@+id/All"
+            android:layout_weight="0.20"
+            android:background="#363947"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="繰り返し"
+            android:id="@+id/Again"
+            android:layout_weight="0.20"
+            android:background="#faaf47"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="お気に入り"
+            android:id="@+id/Favo"
+            android:layout_weight="0.20"
+            android:background="#363947"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="onClick"/>
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom">
+        <net.nend.android.NendAdView
+            android:id="@+id/nend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            NendApiKey="7e14587163efdd8732a238fd0a942d5b9b1b54fb"
+            NendSpotId="769236"
+            NendAdjustSize="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ryo.bio2.NitakuMondai"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="第　問"
+        android:id="@+id/textNo"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#faaf47"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        android:autoText="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Question"
+        android:id="@+id/textQuestion"
+        android:layout_weight="1"
+        android:textSize="18dp"
+        android:background="#f9ede1e0"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dp"
+        android:text="     "
+        android:layout_weight="1"
+        android:id="@+id/textKaisetu" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+
+        android:layout_weight="0.10">
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button1"
+                android:textSize="40dp"
+                android:layout_weight="1"
+                android:onClick="onClick" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button2"
+                android:textSize="40dp"
+                android:layout_weight="1"
+                android:onClick="onClick" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="お気に入り"
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:onClick="onClick"
+                android:layout_gravity="left" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次へ→"
+                android:id="@+id/button4"
+                android:textSize="13dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:onClick="onClick" />
+        </TableRow>
+    </TableLayout>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|bottom">
+    <net.nend.android.NendAdView
+        android:id="@+id/nend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        NendApiKey="7e14587163efdd8732a238fd0a942d5b9b1b54fb"
+        NendSpotId="769236"
+        NendAdjustSize="true" />
+    <!-- NendApiKey="7e14587163efdd8732a238fd0a942d5b9b1b54fb"
+     NendSpotId="769236" />  -->
+</LinearLayout>
+
+
